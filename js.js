@@ -3,9 +3,9 @@ container.style.height = "255px";
 var looper;
 var degrees = 0;
 var clockwise = true;
-var speed = document.querySelector("input[type=range]").value;
+var speed = 30.5 - document.querySelector("input[type=range]").value;
 
-document.querySelector("input[type=range]").addEventListener("change", function () { speed = document.querySelector("input[type=range]").value; startuj(); });
+document.querySelector("input[type=range]").addEventListener("change", function () { speed = 30.5 - document.querySelector("input[type=range]").value; startuj(); });
 document.getElementById("start").addEventListener("click", startuj);
 document.getElementById("stop").addEventListener("click", stopiraj);
 document.getElementById("left").addEventListener("click", function () { clockwise = false; startuj(); });
